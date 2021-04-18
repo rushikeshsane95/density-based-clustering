@@ -1,17 +1,17 @@
 /*-------------------------------------------------------------------*/
-/* CBDEN.C         Jarkko Piiroinen                                  */
+/* CBDEN.C         Rushikesh Sane.                                   */
 /*                                                                   */
 /* Density-based modification of the Random Swap (RS) algorithm.     */
 /* Based on the original CBRS.C implementation by Pasi Fränti.       */
 /*                                                                   */
 /* ChangeLog:                                                        */
 /*                                                                   */
-/* 0.06: 16.3.18  JP: Cleaned up unused parts of the code.           */
-/* 0.05:  3.7.17  JP: Removed radius parameter.                      */
-/* 0.04: 10.4.17  JP: Renamed to CBDEN.                              */
-/* 0.03:  7.5.17  JP: Cosmetic changes to parameter names.           */
-/* 0.02: 10.4.17  JP: Added radius parameter.                        */
-/* 0.01: 22.2.17  JP: Initial version based on CBRS.C.               */
+/* 0.06: 16.3.18  RS: Cleaned up unused parts of the code.           */
+/* 0.05:  3.7.17  RS: Removed radius parameter.                      */
+/* 0.04: 10.4.17  RS: Renamed to CBDEN.                              */
+/* 0.03:  7.5.17  RS: Cosmetic changes to parameter names.           */
+/* 0.02: 10.4.17  RS: Added radius parameter.                        */
+/* 0.01: 22.2.17  RS: Initial version based on CBRS.C.               */
 /*-------------------------------------------------------------------*/
 
 #define ProgName        "CBDEN"
