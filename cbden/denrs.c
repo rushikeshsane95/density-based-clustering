@@ -1,28 +1,28 @@
 /*--------------------------------------------------------------------*/
-/* DENRS.C         Jarkko Piiroinen                                   */
+/* DENRS.C         Rushikesh Sane                                     */
 /*                                                                    */
 /* Density-based random swap algorithm.                               */
 /*                                                                    */
 /* Based on the original random swap implementation (CBRS) by Marko   */
-/* Tuononen and Pasi Fränti. This modified version calculates         */
+/* Tuononen and Pasi FrÃ¤nti. This modified version calculates         */
 /* weights for each centroid based on densities of the clusters.      */
 /* The distances from centroids to vectors are then calculated as     */
 /* weighted distances.                                                */
 /*                                                                    */
 /* ChangeLog:                                                         */
 /*                                                                    */
-/* 0.12:  16.3.18 JP: Clean up unused parts of the code.              */
-/* 0.11:  11.3.18 JP: Density calculation based on dens(i)=n/md(i).   */
-/* 0.10:  10.3.18 JP: Removed weight trial-and-error.                 */
-/* 0.09:  20.2.18 JP: TSE-based weight calculation.                   */
-/* 0.08: 10.12.17 JP: Print updated weights during clustering.        */
-/* 0.07:  20.9.17 JP: Try to calculate weights during clustering.     */
-/* 0.06:   3.7.17 JP: Use fixed weights and print centroid weights.   */
-/* 0.05:  31.5.17 JP: Alternative algorithm based on mean distance.   */
-/* 0.04:  21.5.17 JP: Minor cleanup, renamed functions and variables. */
-/* 0.03:   7.5.17 JP: Fix to MSE calculation to use centroid weights. */
-/* 0.02:  10.4.17 JP: Nearby points calculation based on radius.      */
-/* 0.01:   9.3.17 JP: Initial version based on RS.C.                  */
+/* 0.12:  16.3.18 RS: Clean up unused parts of the code.              */
+/* 0.11:  11.3.18 RS: Density calculation based on dens(i)=n/md(i).   */
+/* 0.10:  10.3.18 RS: Removed weight trial-and-error.                 */
+/* 0.09:  20.2.18 RS: TSE-based weight calculation.                   */
+/* 0.08: 10.12.17 RS: Print updated weights during clustering.        */
+/* 0.07:  20.9.17 RS: Try to calculate weights during clustering.     */
+/* 0.06:   3.7.17 RS: Use fixed weights and print centroid weights.   */
+/* 0.05:  31.5.17 RS: Alternative algorithm based on mean distance.   */
+/* 0.04:  21.5.17 RS: Minor cleanup, renamed functions and variables. */
+/* 0.03:   7.5.17 RS: Fix to MSE calculation to use centroid weights. */
+/* 0.02:  10.4.17 RS: Nearby points calculation based on radius.      */
+/* 0.01:   9.3.17 RS: Initial version based on RS.C.                  */
 /*--------------------------------------------------------------------*/
 
 
@@ -739,7 +739,7 @@ void CalculateWeights(TRAININGSET* TS, CODEBOOK* CB, PARTITIONING* P, double *we
 }
 
 /*-------------------------------------------------------------------*/
-// AKTIVITEETIN PÄIVITTÄMINEN TULEE TÄNNE
+// AKTIVITEETIN PÃ„IVITTÃ„MINEN TULEE TÃ„NNE
 
 /* generates optimal codebook with respect to a given partitioning */
 void OptimalRepresentatives(PARTITIONING *pP, TRAININGSET *pTS, CODEBOOK *pCB, 
